@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Current_control_current_source_dialog</class>
+ <widget class="QDialog" name="Current_control_current_source_dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>482</width>
+    <height>404</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="coefficient">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>130</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>coefficient : </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="branchname">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>160</y>
+     <width>181</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Branch Name : </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancel">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>350</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="branchline">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>160</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="OK">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>350</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="coefline">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>130</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="text">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>190</y>
+     <width>171</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>e.g. VS1</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Othercomponentsdialog</class>
+ <widget class="QDialog" name="Othercomponentsdialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>713</width>
+    <height>545</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="OK">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>490</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Cancel">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>490</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="image">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>50</y>
+     <width>151</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>230</y>
+     <width>261</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="currentsource">
+      <property name="text">
+       <string>Current Source</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="currentcontrolcurrentsource">
+      <property name="text">
+       <string>Current Control Current Source</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="currentcontrolvoltagesource">
+      <property name="text">
+       <string>Current Control Voltage Source</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="voltagecontrolcurrentsource">
+      <property name="text">
+       <string>Voltage Control Current Source</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="voltagecontrolvoltagesource">
+      <property name="text">
+       <string>Voltage Control Voltage Source</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

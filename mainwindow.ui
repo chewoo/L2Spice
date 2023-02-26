@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1224</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1226</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMaximumSize</enum>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="wireButton">
+         <property name="text">
+          <string>wire</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="resistorButton">
+         <property name="text">
+          <string>resistor</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="capacitorButton">
+         <property name="text">
+          <string>capacitor</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="inductorButton">
+         <property name="text">
+          <string>inductor</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="voltagesourceButton">
+         <property name="text">
+          <string>Voltage Source</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="diodeButton">
+         <property name="text">
+          <string>Diode</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="componentsButton">
+         <property name="text">
+          <string>Components</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="groundButton">
+         <property name="text">
+          <string>Ground</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="moveButton">
+         <property name="text">
+          <string>move</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="delButton">
+         <property name="text">
+          <string>del</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="runButton">
+         <property name="text">
+          <string>Run</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Workspace" name="workspace"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1224</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>file</string>
+    </property>
+    <addaction name="actiondick"/>
+    <addaction name="actionhi"/>
+   </widget>
+   <widget class="QMenu" name="menuedit">
+    <property name="title">
+     <string>edit</string>
+    </property>
+    <widget class="QMenu" name="menu110511232">
+     <property name="title">
+      <string>110511232</string>
+     </property>
+     <addaction name="actionPeter"/>
+     <addaction name="actionSkills"/>
+     <addaction name="actionSkill2_Ejagulation"/>
+     <addaction name="actionSkill3_Unlock_the_door"/>
+     <addaction name="actionSkill4_Shaving_Dragon_beard"/>
+     <addaction name="actionHabit1_Body_yoga"/>
+     <addaction name="actionHabit2_jump_into_water"/>
+     <addaction name="actionHabit3_fuck_you"/>
+    </widget>
+    <widget class="QMenu" name="menu6p_Parsulia_q9">
+     <property name="title">
+      <string>6p_Parsulia_q9</string>
+     </property>
+     <addaction name="actionlin_naa_gee_ba"/>
+     <addaction name="actionSkill1_Dragon_fire"/>
+    </widget>
+    <widget class="QMenu" name="menuWilliam">
+     <property name="title">
+      <string>William</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="action110511195"/>
+     <addaction name="actionSkill1_M"/>
+     <addaction name="actionSkill2_Flashing_Testicles"/>
+     <addaction name="actionSkill3_nine_head_Dragons"/>
+     <addaction name="actionSkill4_Slow_down"/>
+     <addaction name="actionSkill5_SOP"/>
+     <addaction name="actionSkill6_big_breast"/>
+     <addaction name="actionSkill7_big_butt"/>
+     <addaction name="actionSkill8_big_stomach"/>
+     <addaction name="actionSkill9_High_concentration_cum"/>
+     <addaction name="actionPornstar"/>
+    </widget>
+    <addaction name="actionhi_2"/>
+    <addaction name="actiongon_gin_fong"/>
+    <addaction name="actionyoe_cheng_yu"/>
+    <addaction name="actionoh_yu_chan"/>
+    <addaction name="actionL2_Lao_2"/>
+    <addaction name="actionoki_chan"/>
+    <addaction name="menu110511232"/>
+    <addaction name="action_peter_dragon_dick"/>
+    <addaction name="menu6p_Parsulia_q9"/>
+    <addaction name="action_dragon_father"/>
+    <addaction name="menuWilliam"/>
+    <addaction name="action_King_of_Sex"/>
+   </widget>
+   <addaction name="menufile"/>
+   <addaction name="menuedit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actiondick">
+   <property name="text">
+    <string>dick</string>
+   </property>
+  </action>
+  <action name="actionhi">
+   <property name="text">
+    <string>hi </string>
+   </property>
+  </action>
+  <action name="actionhi_2">
+   <property name="text">
+    <string>hi</string>
+   </property>
+  </action>
+  <action name="actiongon_gin_fong">
+   <property name="text">
+    <string>gon gin fong</string>
+   </property>
+  </action>
+  <action name="actionyoe_cheng_yu">
+   <property name="text">
+    <string>yoe cheng yu</string>
+   </property>
+  </action>
+  <action name="actionoh_yu_chan">
+   <property name="text">
+    <string>oh yu chan</string>
+   </property>
+  </action>
+  <action name="actionL2_Lao_2">
+   <property name="text">
+    <string>L2 = Lao 2</string>
+   </property>
+  </action>
+  <action name="actionoki_chan">
+   <property name="text">
+    <string>oki chan </string>
+   </property>
+  </action>
+  <action name="action_peter_dragon_dick">
+   <property name="text">
+    <string>^ peter dragon dick^</string>
+   </property>
+  </action>
+  <action name="action_dragon_father">
+   <property name="text">
+    <string>^dragon father^</string>
+   </property>
+  </action>
+  <action name="actionPeter">
+   <property name="text">
+    <string>Peter</string>
+   </property>
+  </action>
+  <action name="actionSkills">
+   <property name="text">
+    <string>Skill1: Dragon Breathe</string>
+   </property>
+  </action>
+  <action name="actionSkill2_Ejagulation">
+   <property name="text">
+    <string>Skill2: Ejagulation</string>
+   </property>
+  </action>
+  <action name="actionSkill3_Unlock_the_door">
+   <property name="text">
+    <string>Skill3: Unlock the door</string>
+   </property>
+  </action>
+  <action name="actionSkill4_Shaving_Dragon_beard">
+   <property name="text">
+    <string>Skill4: Shaving Dragon beard</string>
+   </property>
+  </action>
+  <action name="actionHabit1_Body_yoga">
+   <property name="text">
+    <string>Habit1: Body yoga</string>
+   </property>
+  </action>
+  <action name="actionHabit2_jump_into_water">
+   <property name="text">
+    <string>Habit2: jump into water</string>
+   </property>
+  </action>
+  <action name="actionHabit3_fuck_you">
+   <property name="text">
+    <string>Habit3: fuck you</string>
+   </property>
+  </action>
+  <action name="actionlin_naa_gee_ba">
+   <property name="text">
+    <string>lin naa gee ba</string>
+   </property>
+  </action>
+  <action name="actionSkill1_Dragon_fire">
+   <property name="text">
+    <string>Skill1: Dragon flame</string>
+   </property>
+  </action>
+  <action name="action_King_of_Sex">
+   <property name="text">
+    <string>^King of Sex^</string>
+   </property>
+  </action>
+  <action name="action110511195">
+   <property name="text">
+    <string>110511195</string>
+   </property>
+  </action>
+  <action name="actionSkill1_M">
+   <property name="text">
+    <string>Skill1: M</string>
+   </property>
+  </action>
+  <action name="actionSkill2_Flashing_Testicles">
+   <property name="text">
+    <string>Skill2: Flashing Testicles</string>
+   </property>
+  </action>
+  <action name="actionSkill3_nine_head_Dragons">
+   <property name="text">
+    <string>Skill3: nine-head Dragons</string>
+   </property>
+  </action>
+  <action name="actionSkill4_Slow_down">
+   <property name="text">
+    <string>Skill4: Slow down</string>
+   </property>
+  </action>
+  <action name="actionSkill5_SOP">
+   <property name="text">
+    <string>Skill5: SOP</string>
+   </property>
+  </action>
+  <action name="actionSkill6_big_breast">
+   <property name="text">
+    <string>Skill6: big breast</string>
+   </property>
+  </action>
+  <action name="actionSkill7_big_butt">
+   <property name="text">
+    <string>Skill7: big butt</string>
+   </property>
+  </action>
+  <action name="actionSkill8_big_stomach">
+   <property name="text">
+    <string>Skill8: big stomach</string>
+   </property>
+  </action>
+  <action name="actionSkill9_High_concentration_cum">
+   <property name="text">
+    <string>Skill9: High concentration cum</string>
+   </property>
+  </action>
+  <action name="actionPornstar">
+   <property name="text">
+    <string>Pornstar</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Workspace</class>
+   <extends>QGraphicsView</extends>
+   <header>workspace.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
