@@ -139,10 +139,6 @@ MainWindow::~MainWindow()
     delete othercomponentsdialog;
 }
 
-void MainWindow::on_action_peter_dragon_dick_triggered()
-{
-    qDebug() << "Peterrrrrrrrrrrrrrrrrrrrrrr!!!!!!";
-}
 
 
 

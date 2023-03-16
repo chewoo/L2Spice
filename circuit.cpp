@@ -457,7 +457,7 @@ void Circuit::ini_sys()
         Component* s_node = getDependantBranch(allCCCS[i]->getDependantBranchName());
         voltage_source* vs = dynamic_cast<voltage_source*>(s_node);
         if(!vs){
-            qDebug()<<"dick";
+            qDebug()<<"Wrong usage";
         }else{
             vs_num = vs->get_num();
         }
@@ -476,7 +476,7 @@ void Circuit::ini_sys()
         Component* s_node = getDependantBranch(allCCVS[i]->getDependantBranchName());
         voltage_source* vs = dynamic_cast<voltage_source*>(s_node);
         if(!vs){
-            qDebug()<<"dick";
+            qDebug()<<"Wrong usage";
         }else{
             vs_num = vs->get_num();
         }
@@ -644,35 +644,6 @@ Matrix Circuit::update_sys(const Matrix& last_state,double timestep,double curre
 
         next_iter = Jacobian.solve_gauss_elimination(Jacobian*curr_iter-f);
 
-        //for(int i=0;i<diodes_v.size();i++)
-        // {
-        //    int node1 = diodes_v[i].first;
-        //    int node2 = diodes_v[i].second;
-        //    diff = max(diff,abs((next_iter(node1,0) - next_iter(node2,0)) - (curr_iter(node1,0) - curr_iter(node2,0))  ));
-
-        //}
-        /*
-        count++;
-
-        if(count==100){
-            curr_iter = last_state;
-            for(int i=0;i<diodes_v.size();i++){
-                int node1 = diodes_v[i].first;
-                int node2 = diodes_v[i].second;
-                curr_iter.add_ij(node2,0,last_state(node1,0)-0.8);
-            }
-
-            continue;
-        }else if(count==200){
-            curr_iter = last_state;
-            for(int i=0;i<diodes_v.size();i++){
-                int node1 = diodes_v[i].first;
-                int node2 = diodes_v[i].second;
-                curr_iter.set_ij(node2,0,last_state(node1,0)-0.1);
-            }
-            continue;
-        }*/
-
         diff = Matrix::calculate_maxVdifference(curr_iter,next_iter);
         if(diff == -1)
             dick = 0;
@@ -684,27 +655,6 @@ Matrix Circuit::update_sys(const Matrix& last_state,double timestep,double curre
         //qDebug()<<diff;
     }
 
-
-    /*
-        if(dick){
-
-            qDebug()<<count;
-            qDebug()<<"A";
-            A.debug();
-            qDebug()<<"b";
-            b.debug();
-            qDebug()<<"Non";
-            non_linear.debug();
-            qDebug()<<"J";
-            Jacobian.debug();
-            qDebug()<<"ci";
-            curr_iter.debug();
-            qDebug()<<"f";
-            f.debug();
-            qDebug()<<"ni";
-            next_iter.debug();
-        }
-    */
     return curr_iter;
 
 }
@@ -1027,7 +977,7 @@ Matrix Circuit::dc_analysis()
         Component* s_node = getDependantBranch(allCCCS[i]->getDependantBranchName());
         voltage_source* vs = dynamic_cast<voltage_source*>(s_node);
         if(!vs){
-            qDebug()<<"dick";
+            qDebug()<<"Wrong usage";
         }else{
             vs_num = vs->get_num();
         }
@@ -1046,7 +996,7 @@ Matrix Circuit::dc_analysis()
         Component* s_node = getDependantBranch(allCCVS[i]->getDependantBranchName());
         voltage_source* vs = dynamic_cast<voltage_source*>(s_node);
         if(!vs){
-            qDebug()<<"dick";
+            qDebug()<<"Wrong usage";
         }else{
             vs_num = vs->get_num();
         }
@@ -1546,7 +1496,7 @@ Matrix Circuit::get_jacobian(Matrix last_state,double timestep)
         Component* s_node = getDependantBranch(allCCCS[i]->getDependantBranchName());
         voltage_source* vs = dynamic_cast<voltage_source*>(s_node);
         if(!vs){
-            qDebug()<<"dick";
+            qDebug()<<"Wrong usage";
         }else{
             vs_num = vs->get_num();
         }
@@ -1565,7 +1515,7 @@ Matrix Circuit::get_jacobian(Matrix last_state,double timestep)
         Component* s_node = getDependantBranch(allCCVS[i]->getDependantBranchName());
         voltage_source* vs = dynamic_cast<voltage_source*>(s_node);
         if(!vs){
-            qDebug()<<"dick";
+            qDebug()<<"Wrong usage";
         }else{
             vs_num = vs->get_num();
         }
