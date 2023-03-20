@@ -98,7 +98,7 @@
        <item>
         <widget class="QPushButton" name="delButton">
          <property name="text">
-          <string>del</string>
+          <string>delete</string>
          </property>
         </widget>
        </item>

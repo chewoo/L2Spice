@@ -5,10 +5,10 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    QFile stylesheetfile("./Combinear.qss");
-    stylesheetfile.open(QFile::ReadOnly);
-    QString stylesheet = QLatin1String(stylesheetfile.readAll());
-    a.setStyleSheet(stylesheet);
+//    QFile stylesheetfile("./Combinear.qss");
+//    stylesheetfile.open(QFile::ReadOnly);
+//    QString stylesheet = QLatin1String(stylesheetfile.readAll());
+//    a.setStyleSheet(stylesheet);
 
 
     MainWindow w;
