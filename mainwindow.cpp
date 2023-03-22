@@ -129,11 +129,8 @@ void MainWindow::pushRun()
 MainWindow::~MainWindow()
 {
     delete ui;
-    for(int i=0;i<menuImage.size();i++)
-    {
-        delete menuButtonIcon[i];
-        delete menuImage[i];
-    }
+    qDeleteAll(menuButtonIcon.begin(),menuButtonIcon.end());
+    qDeleteAll(menuImage.begin(),menuImage.end());
     menuButtonIcon.clear();
     menuImage.clear();
     delete othercomponentsdialog;

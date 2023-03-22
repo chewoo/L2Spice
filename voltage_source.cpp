@@ -28,6 +28,9 @@ voltage_source::voltage_source(const QString &s,QRect &r,QGraphicsScene *sc):Com
     image->setCharacteristic(QString("VS"));
     voltagesourcedialog = new Voltagesourcedialog();
     voltagesourcedialog->setModal(true);
+
+
+
 }
 int voltage_source::get_num()
 {

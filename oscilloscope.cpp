@@ -1,5 +1,6 @@
 #include "oscilloscope.h"
 #include "ui_oscilloscope.h"
+#include "unit_transformer.h"
 
 Oscilloscope::Oscilloscope(Circuit* c,QWidget *parent) :
     QDialog(parent),
@@ -54,6 +55,11 @@ Oscilloscope::Oscilloscope(Circuit* c,QWidget *parent) :
     maxtimesteptext->setGeometry(200,240,130,25);
     maxtimestepline->setGeometry(350,240,130,25);
 
+    warning = new QLabel(this);
+    warning->setText("Time must be inputed a non-zero value");
+    warning->setGeometry(200,300,200,25);
+    warning->hide();
+
     buttonOK = new QPushButton(this);
     buttonCancel = new QPushButton(this);
     buttonOK->setText("OK");
@@ -95,6 +101,7 @@ Oscilloscope::~Oscilloscope()
     delete chartview;
     for(int i=0;i<all_series.size();i++)
         delete all_series[i];
+    qDeleteAll(all_series);
     all_series.clear();
     delete xAxis;
     delete yAxis;
@@ -279,15 +286,32 @@ double Oscilloscope::getTime()
 
 void Oscilloscope::pushButtonOK()
 {
-    time = timeline->text().toDouble();
-    maxtimestep = maxtimestepline->text().toDouble();
-    xAxis->setMax(time);
-    hideInput();
-    showOscilloscope();
-    calculate();
-    customplot_calculate();
-    y_upperBound = INT_MIN;
-    y_lowerBound = INT_MAX;
+//    do
+//   {
+        if(timeline->text() != "" && timeline->text() != "0")
+        {
+            time = unit_transformer::transform(timeline->text());
+            if(maxtimestepline->text() != "")
+            //    maxtimestep = maxtimestepline->text().toDouble();
+                maxtimestep = unit_transformer::transform(maxtimestepline->text());
+            else
+                maxtimestep = 0;
+            xAxis->setMax(time);
+            hideInput();
+            showOscilloscope();
+            calculate();
+            customplot_calculate();
+            y_upperBound = INT_MIN;
+            y_lowerBound = INT_MAX;
+            warning->hide();
+ //         break;
+        }
+        else
+        {
+            warning->show();
+//            break;
+        }
+//    }while();
 }
 
 void Oscilloscope::pushButtonCancel()
@@ -297,6 +321,7 @@ void Oscilloscope::pushButtonCancel()
     hideInput();
     hideOscilloscope();
     hideInput();
+    warning->hide();
     this->hide();
 }
 
@@ -368,6 +393,8 @@ void Oscilloscope::changeMeasure(int a)
             for(int i=0;i<nodesValue[currentObject].size();i++)
                 if(nodesValue[currentObject][i] < min)
                     min = nodesValue[currentObject][i];
+            if(min < 1e-10)
+                min = 0;
             ui->text->setText("Node" + QString::number(currentObject+1) + " min : ");
             ui->ans->setText(QString::number(min));
             break;
@@ -418,6 +445,7 @@ void Oscilloscope::hideOscilloscope()
 {
     chartview->hide();
     ui->widget->hide();
+    buttonFullZoom->hide();
 }
 
 void Oscilloscope::clearChartViewBeforeCalculate()

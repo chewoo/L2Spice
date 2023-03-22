@@ -182,5 +182,7 @@ void Component::resetNodeIndex()
 Component::~Component()
 {
     delete image;
+    qDeleteAll(nodes.begin(),nodes.end());
+    nodes.clear();
 
 }

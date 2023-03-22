@@ -101,6 +101,19 @@
     <string>OK</string>
    </property>
   </widget>
+  <widget class="QLabel" name="warning">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>230</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Each data must input value</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

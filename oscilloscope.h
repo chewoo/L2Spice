@@ -50,6 +50,7 @@ private:
     QLineEdit *timeline;
     QLabel *maxtimesteptext;
     QLineEdit *maxtimestepline;
+    QLabel *warning;
     QPushButton *buttonOK;
     QPushButton *buttonCancel;
     QPushButton *buttonFullZoom;
