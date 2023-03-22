@@ -36,11 +36,8 @@ Othercomponentsdialog::~Othercomponentsdialog()
 {
     delete ui;
     delete image;
-    for(int i=0;i<menuImage.size();i++)
-    {
-        delete menuImage[i];
-        delete menuButtonIcon[i];
-    }
+    qDeleteAll(menuImage);
+    qDeleteAll(menuButtonIcon);
 }
 
 int Othercomponentsdialog::getMode()

@@ -37,6 +37,5 @@ private slots:
     void pushDiode();
     void pushGround();
     void pushRun();
-    void on_action_peter_dragon_dick_triggered();
 };
 #endif // MAINWINDOW_H

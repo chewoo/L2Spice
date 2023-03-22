@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
@@ -20,7 +23,7 @@
       <x>0</x>
       <y>0</y>
       <width>1226</width>
-      <height>681</height>
+      <height>691</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -95,7 +98,7 @@
        <item>
         <widget class="QPushButton" name="delButton">
          <property name="text">
-          <string>del</string>
+          <string>delete</string>
          </property>
         </widget>
        </item>
@@ -113,79 +116,6 @@
      </item>
     </layout>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1224</width>
-     <height>26</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menufile">
-    <property name="title">
-     <string>file</string>
-    </property>
-    <addaction name="actiondick"/>
-    <addaction name="actionhi"/>
-   </widget>
-   <widget class="QMenu" name="menuedit">
-    <property name="title">
-     <string>edit</string>
-    </property>
-    <widget class="QMenu" name="menu110511232">
-     <property name="title">
-      <string>110511232</string>
-     </property>
-     <addaction name="actionPeter"/>
-     <addaction name="actionSkills"/>
-     <addaction name="actionSkill2_Ejagulation"/>
-     <addaction name="actionSkill3_Unlock_the_door"/>
-     <addaction name="actionSkill4_Shaving_Dragon_beard"/>
-     <addaction name="actionHabit1_Body_yoga"/>
-     <addaction name="actionHabit2_jump_into_water"/>
-     <addaction name="actionHabit3_fuck_you"/>
-    </widget>
-    <widget class="QMenu" name="menu6p_Parsulia_q9">
-     <property name="title">
-      <string>6p_Parsulia_q9</string>
-     </property>
-     <addaction name="actionlin_naa_gee_ba"/>
-     <addaction name="actionSkill1_Dragon_fire"/>
-    </widget>
-    <widget class="QMenu" name="menuWilliam">
-     <property name="title">
-      <string>William</string>
-     </property>
-     <addaction name="separator"/>
-     <addaction name="action110511195"/>
-     <addaction name="actionSkill1_M"/>
-     <addaction name="actionSkill2_Flashing_Testicles"/>
-     <addaction name="actionSkill3_nine_head_Dragons"/>
-     <addaction name="actionSkill4_Slow_down"/>
-     <addaction name="actionSkill5_SOP"/>
-     <addaction name="actionSkill6_big_breast"/>
-     <addaction name="actionSkill7_big_butt"/>
-     <addaction name="actionSkill8_big_stomach"/>
-     <addaction name="actionSkill9_High_concentration_cum"/>
-     <addaction name="actionPornstar"/>
-    </widget>
-    <addaction name="actionhi_2"/>
-    <addaction name="actiongon_gin_fong"/>
-    <addaction name="actionyoe_cheng_yu"/>
-    <addaction name="actionoh_yu_chan"/>
-    <addaction name="actionL2_Lao_2"/>
-    <addaction name="actionoki_chan"/>
-    <addaction name="menu110511232"/>
-    <addaction name="action_peter_dragon_dick"/>
-    <addaction name="menu6p_Parsulia_q9"/>
-    <addaction name="action_dragon_father"/>
-    <addaction name="menuWilliam"/>
-    <addaction name="action_King_of_Sex"/>
-   </widget>
-   <addaction name="menufile"/>
-   <addaction name="menuedit"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actiondick">

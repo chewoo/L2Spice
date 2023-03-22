@@ -70,6 +70,8 @@ Voltagesourcedialog::Voltagesourcedialog(QWidget *parent) :
     hideSquare();
 
     currentMode = DC;
+
+    setWindowFlags(Qt::Dialog | Qt::CustomizeWindowHint | Qt::WindowTitleHint);
 }
 
 Voltagesourcedialog::~Voltagesourcedialog()
