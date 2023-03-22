@@ -62,6 +62,19 @@
     <string>Inductance :</string>
    </property>
   </widget>
+  <widget class="QLabel" name="warning">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>150</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Each data must input value</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
