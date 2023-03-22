@@ -9,6 +9,9 @@ Current_control_current_source_dialog::Current_control_current_source_dialog(QWi
 
     QObject::connect(ui->OK,SIGNAL(clicked()),this,SLOT(buttonOK()));
     QObject::connect(ui->cancel,SIGNAL(clicked()),this,SLOT(buttonCancel()));
+    ui->warning->hide();
+
+    setWindowFlags(Qt::Dialog | Qt::CustomizeWindowHint | Qt::WindowTitleHint);
 
 }
 
@@ -19,26 +22,40 @@ Current_control_current_source_dialog::~Current_control_current_source_dialog()
 
 void Current_control_current_source_dialog::getInput(double &a,QString &b)
 {
-    if(ui->coefficient->text() == "")
+    if(ui->coefline->text() == "")
         a = 1;
     else
         a = unit_transformer::transform(ui->coefline->text());
     if(ui->branchline->text() == "")
         b = "ERROR";
     else
-        a = unit_transformer::transform(ui->coefline->text());
+        b = branchName;
+    //   a = unit_transformer::transform(ui->coefline->text());
 }
 
 void Current_control_current_source_dialog::buttonOK()
 {
-    coefficient = ui->coefline->text();
-    branchName = ui->branchline->text();
-    this->hide();
+    if(ui->coefline->text() != "" && ui->branchline->text() != "")
+    {
+        coefficient = ui->coefline->text();
+        branchName = ui->branchline->text();
+        ui->warning->hide();
+        this->hide();
+    }
+    else
+        ui->warning->show();
+    if(ui->coefline->text() != "")
+        coefficient = ui->coefline->text();
+    if(ui->branchline->text() != "")
+        branchName = ui->branchline->text();
+
 }
 
 void Current_control_current_source_dialog::buttonCancel()
 {
-    ui->coefficient->setText(coefficient);
+    ui->coefline->setText(coefficient);
     ui->branchline->setText(branchName);
+    ui->warning->hide();
+
     this->hide();
 }

@@ -28,6 +28,8 @@ current_source::current_source(const QString &s,QRect &r,QGraphicsScene *sc):Com
     image->setCharacteristic(QString("IS"));
     currentsourcedialog = new Currentsourcedialog();
     currentsourcedialog->setModal(true);
+
+
 }
 void current_source::Delete()
 {
