@@ -23,3 +23,9 @@ L2spice is a circuit simulation program that is made by Qt creator in C++.
 + Basic UI
 + Osilliscope
 + Hot-key System
+# How to use
+1. Download Qt creator(based on Qt 6.3.1).
+2. Clone this repository.
+3. Build this project.
+4. Put the "image" to built directory.
+5. Finish. :)
